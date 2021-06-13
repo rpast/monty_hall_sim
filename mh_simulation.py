@@ -49,6 +49,9 @@ class Preset:
         goat_slice = np.where(self.state == 0)
         self.state = np.delete(self.state, goat_slice[0][0], axis=None)
 
+    def coin_toss(self):
+        self.result = self.state[np.random.randint(0,2)]
+
 
 def sim_mh(scenario, n = 1000):
     '''
@@ -93,6 +96,8 @@ def sim_mh(scenario, n = 1000):
                 )
 
     return p_series
+
+
 
 if __name__ == '__main__':
     # Set number of trials
