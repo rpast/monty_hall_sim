@@ -1,5 +1,4 @@
 import numpy as np
-from numpy.core.defchararray import title
 import pandas as pd
 import matplotlib.pyplot as plt
 import array as ar
